@@ -1,0 +1,209 @@
+body {
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+.nav {
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 10px;
+    
+  }
+
+.navItems li {
+    display: inline; 
+    margin-left: 10px;   
+    text-align: center; 
+    background-color:  rgb(102, 151, 102);
+    border-radius: 2px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    padding: 2px;
+    
+  }
+
+li a {
+    color: beige;
+  }
+
+.box a {
+    color: darkslategray;
+  }
+
+  .navItems {
+    align-items: flex-end;
+  }
+
+img.navImg {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 386px;
+  height: 250px;
+
+}
+
+
+  
+h2 {
+    text-align: left;
+    margin-left: 10px;
+    color: darkslategray;
+    display: block;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  
+  
+.container {
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: rgb(102, 151, 102);
+    border-radius: 10px;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+  }
+  
+.box {
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+      
+    
+  }
+
+.aboutMebox {
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+      
+    
+  }
+
+.aboutMebox {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: black;
+      
+    
+  }
+
+
+  
+img {
+    height: auto;
+    width: 100%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    
+  }
+  
+#flexstart {
+    justify-content: flex-start;
+  }
+  
+#flexend {
+    justify-content: flex-end;
+  }
+  
+#center {
+    justify-content: center;
+  }
+  
+#spacearound {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+  }
+  
+#spacebetween {
+    justify-content: space-between;
+  }
+
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: darkslategray
+  }
+
+.aboutMebox li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: darkslategray;
+  }
+
+.contactBox li {
+    display: inline-block; 
+    margin-left: 10px;   
+    text-align: center; 
+    background-color: rgb(102, 151, 102);
+    border-radius: 2px;
+    font-family: sans-serif;
+    padding: 2px 2px 2px 2px;
+    color: whitesmoke;
+    
+  }
+
+  #contact a {
+    color: darkslategray;
+  }
+
+
+  .nav2 {
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 10px;
+    
+  }
+
+.navItems2 li {
+    display: inline; 
+    margin-left: 10px;   
+    text-align: center; 
+    background-color:  rgb(102, 151, 102);
+    border-radius: 2px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    padding: 2px 2px 2px 2px;
+    
+  }
+
+
+  .navItems2 {
+    align-items: flex-end;
+  }
+
+img.navImg2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 386px;
+  height: 250px;
+
+}
+
+
+
+
+
+  
+  
+
+
+
+ 
