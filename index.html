@@ -5,28 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\styles.css">
+    <style>
+        body {
+          padding: 25px;
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+             padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+
+        * {box-sizing: border-box;}
+
+        .img-magnifier-container {
+            position:relative;
+        }        
+    </style>
     <title>.CY - Portfolio</title>
+    
     
 </head>
 <body>
+    <h2>Toggle Dark/Light Mode</h2>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+
+    <button onclick="myFunction2()">Toggle dark mode</button>
+
+    <script>
+        function myFunction2() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
+      
     <div class='nav'>
       
         <div class='navImg'>
             <img src="images\Cas FB 2.jpg.png">
         </div>
-        <div class='navItems'>
-            <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    </div>
+    <div>
+        <h2>Clickable Dropdown</h2>
+        <p>Click on the button to open the dropdown menu.</p>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#aboutme">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>  
+        
+        
     </div>
     
     <h2 id="aboutme">About Me</h2>
     <div class='container' id='spacearound'>
-      
       <div class='box'>
           <p>Cas is a keen programmer and have been doing this for the last 5 years</p>
       </div>
@@ -83,8 +182,8 @@
             </ul>
         </div>
     </div>
-    <script src="js\script.js"></script>
     
+    <script src="./script.js"></script>
   </body>
 
 </body>
